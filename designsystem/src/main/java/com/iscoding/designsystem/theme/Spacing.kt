@@ -12,7 +12,7 @@ data class WalletAppSpacing(
     val extraLarge: Dp
 )
 
-val spacing = WalletAppSpacing(
+val WalletSpacing = WalletAppSpacing(
     extraSmall = 4.dp,
     small = 8.dp,
     medium = 16.dp,
@@ -20,4 +20,4 @@ val spacing = WalletAppSpacing(
     extraLarge = 32.dp
 )
 
-internal val LocalWalletAppSpacing = staticCompositionLocalOf { spacing }
+internal val LocalWalletAppSpacing = staticCompositionLocalOf { WalletSpacing }

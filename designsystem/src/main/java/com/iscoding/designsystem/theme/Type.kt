@@ -1,192 +1,133 @@
 package com.iscoding.designsystem.theme
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.googlefonts.Font
 import androidx.compose.ui.text.googlefonts.GoogleFont
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import com.iscoding.designsystem.R
 
 
-private val provider = GoogleFont.Provider(
-    providerAuthority = "com.google.android.gms.fonts",
-    providerPackage = "com.google.android.gms",
-    certificates = 0 // Temporary fix for build issue
+val InterFontFamily = FontFamily(
+    Font(R.font.inter_regular, FontWeight.Normal),
+    Font(R.font.inter_medium, FontWeight.Medium),
+    Font(R.font.inter_semibold, FontWeight.SemiBold),
+    Font(R.font.inter_bold, FontWeight.Bold),
 )
 
-private val InterFont = GoogleFont("Inter")
+val WalletTypography = WalletAppTypography(
 
-private val InterFontFamily = FontFamily(
-    Font(googleFont = InterFont, fontProvider = provider)
-)
-
-
-@Composable
-fun headlineLarge(): TextStyle {
-    return TextStyle(
+    headlineLarge = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
         fontSize = 40.sp,
-        lineHeight = 83.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        letterSpacing = 9.sp,
-        textAlign = TextAlign.Center
-    )
-}
+        lineHeight = 48.sp
+    ),
 
-@Composable
-fun headline(): TextStyle {
-    return TextStyle(
+    headlineMedium = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
         fontSize = 22.sp,
-        lineHeight = 34.5.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        textAlign = TextAlign.Center,
-    )
-}
+        lineHeight = 32.sp
+    ),
 
-@Composable
-fun titleLarge(): TextStyle {
-    return TextStyle(
+    titleLarge = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
         fontSize = 18.sp,
-        lineHeight = 20.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        textAlign = TextAlign.Center,
-    )
-}
+        lineHeight = 24.sp
+    ),
 
-@Composable
-fun button(): TextStyle {
-    return TextStyle(
+    titleMedium = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp
+    ),
+
+    titleSmall = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 14.sp,
+        lineHeight = 20.sp
+    ),
+
+    bodyLarge = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp
+    ),
+
+    bodyMedium = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        lineHeight = 20.sp
+    ),
+
+    bodySmall = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 12.sp,
+        lineHeight = 18.sp
+    ),
+
+    labelLarge = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 14.sp,
+        lineHeight = 20.sp
+    ),
+
+    labelMedium = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 12.sp,
+        lineHeight = 16.sp
+    ),
+
+    labelSmall = TextStyle(
+        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 11.sp,
+        lineHeight = 16.sp
+    ),
+
+    button = TextStyle(
         fontFamily = InterFontFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 17.sp,
         lineHeight = 22.sp,
         letterSpacing = (-0.41).sp
-    )
-}
+    ),
 
-@Composable
-fun title(): TextStyle {
-    return TextStyle(
-        fontSize = 16.sp,
+    badge = TextStyle(
         fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        lineHeight = 22.04.sp,
-        textAlign = TextAlign.Center,
-    )
-}
-
-@Composable
-fun titleMedium(): TextStyle {
-    return TextStyle(
-        fontSize = 14.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        lineHeight = 22.04.sp,
-        textAlign = TextAlign.Center,
-    )
-}
-
-@Composable
-fun titleSmall(): TextStyle {
-    return TextStyle(
-        fontSize = 12.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W600,
-        lineHeight = 19.22.sp,
-    )
-}
-
-@Composable
-fun body(): TextStyle {
-    return TextStyle(
-        fontSize = 14.sp,
-        lineHeight = 22.43.sp,
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        textAlign = TextAlign.Center,
-    )
-}
-
-@Composable
-fun caption(): TextStyle {
-    return TextStyle(
-        fontFamily = InterFontFamily,
-        fontWeight = FontWeight.W400,
-        fontSize = 12.sp,
-        lineHeight = 14.5.sp,
-    )
-}
-
-//@Composable
-//fun placeHolder(): TextStyle {
-//
-//    return TextStyle(
-//        fontWeight = FontWeight.W600,
-//        fontSize = 12.sp,
-//        lineHeight = 19.22.sp,
-//        color = Theme.colors.gray600,
-//        spanStyle = SpanStyle(),
-//        paragraphStyle = TODO()
-//    )
-//}
-//val Typography =
-//    Typography(
-//        bodyLarge =
-//            TextStyle(
-//                fontFamily = FontFamily.Default,
-//                fontWeight = FontWeight.Normal,
-//                fontSize = 16.sp,
-//                lineHeight = 24.sp,
-//                letterSpacing = 0.5.sp,
-//            ),
-/* Other default text styles to override
-titleLarge = TextStyle(
-    fontFamily = FontFamily.Default,
-    fontWeight = FontWeight.Normal,
-    fontSize = 22.sp,
-    lineHeight = 28.sp,
-    letterSpacing = 0.sp
-),
-labelSmall = TextStyle(
-    fontFamily = FontFamily.Default,
-    fontWeight = FontWeight.Medium,
-    fontSize = 11.sp,
-    lineHeight = 16.sp,
-    letterSpacing = 0.5.sp
-)
- */
-//    )
-
-@Composable
-fun badge(): TextStyle {
-    return TextStyle(
-        fontFamily = InterFontFamily,
+        fontWeight = FontWeight.ExtraBold,
         fontSize = 11.sp,
-        lineHeight = 17.62.sp,
-        fontWeight = FontWeight.W800
-    )
-}
+        lineHeight = 16.sp
+    ),
 
-@Composable
-fun cardTitle(): TextStyle {
-    return TextStyle(
+    cardTitle = TextStyle(
         fontFamily = InterFontFamily,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 10.sp,
-        lineHeight = 16.02.sp,
-        fontWeight = FontWeight.W600
-    )
-}
+        lineHeight = 16.sp
+    ),
 
-@Composable
-fun cardSubtitle(): TextStyle {
-    return TextStyle(
+    cardSubtitle = TextStyle(
         fontFamily = InterFontFamily,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 7.sp,
-        lineHeight = 11.21.sp,
-        fontWeight = FontWeight.W600
+        lineHeight = 12.sp
     )
-}
+)
+
+internal val LocalWalletAppTypography =
+    staticCompositionLocalOf { WalletTypography }
