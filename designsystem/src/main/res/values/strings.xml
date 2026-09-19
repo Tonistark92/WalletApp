@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Wallet</string>
+
+    <!-- Common -->
+    <string name="common_cancel">Cancel</string>
+    <string name="common_retry">Try again</string>
+    <string name="common_continue">Continue</string>
+    <string name="common_done">Done</string>
+    <string name="common_error_generic">Something went wrong</string>
+    <string name="common_loading">Loading…</string>
+
+    <!-- Onboarding (e-KYC) -->
+    <string name="onboarding_title">Verify your identity</string>
+    <string name="onboarding_subtitle">Required to comply with Egyptian AML regulations</string>
+    <string name="onboarding_national_id_label">National ID</string>
+    <string name="onboarding_national_id_helper">14-digit national ID number</string>
+    <string name="onboarding_national_id_error_format">Enter a valid 14-digit national ID</string>
+    <string name="onboarding_selfie_step_label">Take a selfie</string>
+    <string name="onboarding_submit_button">Submit</string>
+    <string name="onboarding_submitting_message">Verifying your details…</string>
+    <string name="onboarding_pending_title">Verification submitted</string>
+    <string name="onboarding_pending_body">We\'ll notify you once your ID is approved — this usually takes a few minutes</string>
+    <string name="onboarding_verified_title">You\'re verified!</string>
+    <string name="onboarding_verified_continue_button">Continue</string>
+    <string name="onboarding_rejected_title">We couldn\'t verify that ID</string>
+    <string name="onboarding_rejected_body">This may be due to a blurry photo or a mismatched selfie</string>
+    <string name="onboarding_try_again_button">Try again</string>
+
+    <!-- Sign In -->
+    <string name="login_phone_or_email_label">Phone or email</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_button">Log in</string>
+    <string name="login_biometric_button">Use biometric login</string>
+    <string name="login_no_account_prompt">Don\'t have an account?</string>
+    <string name="login_sign_up_link">Sign up</string>
+    <string name="login_error_invalid_credentials">Incorrect phone/email or password</string>
+
+    <!-- Sign Up -->
+    <string name="signup_title">Create your account</string>
+    <string name="signup_full_name_label">Full name</string>
+    <string name="signup_phone_label">Phone number</string>
+    <string name="signup_email_label">Email</string>
+    <string name="signup_password_label">Password</string>
+    <string name="signup_password_strength_weak">Weak</string>
+    <string name="signup_password_strength_medium">Medium</string>
+    <string name="signup_password_strength_strong">Strong</string>
+    <string name="signup_button">Create account</string>
+    <string name="signup_error_invalid_email">Enter a valid email</string>
+    <string name="signup_error_invalid_phone">Phone number must be 11 digits</string>
+    <string name="signup_error_account_exists">An account with this phone number already exists</string>
+    <string name="signup_have_account_prompt">Already have an account?</string>
+    <string name="signup_login_link">Log in</string>
+
+    <!-- OTP verification -->
+    <string name="otp_title">Verify your number</string>
+    <string name="otp_subtitle">We sent a 6-digit code to %1$s</string>
+    <string name="otp_resend_button">Resend code</string>
+    <string name="otp_resend_timer">Resend in %1$s</string>
+    <string name="otp_verify_button">Verify</string>
+    <string name="otp_error_invalid_code">That code didn\'t match — try again</string>
+
+    <!-- Home -->
+    <string name="home_balance_label">Balance</string>
+    <string name="home_action_topup">Top up</string>
+    <string name="home_action_send_money">Send money</string>
+    <string name="home_action_scan_to_pay">Scan to pay</string>
+    <string name="home_action_savings">Savings</string>
+    <string name="home_action_pay_bills">Pay bills</string>
+    <string name="home_action_spending">Spending</string>
+    <string name="home_recent_activity">Recent activity</string>
+    <string name="home_error_load_failed">Couldn\'t load your wallet</string>
+
+    <!-- QR payment -->
+    <string name="qr_scan_instruction">Point your camera at a merchant QR code</string>
+    <string name="qr_scan_simulate_button">Simulate scan (demo)</string>
+    <string name="qr_pay_button">Pay</string>
+    <string name="qr_amount_label">Amount</string>
+    <string name="qr_payment_success">Payment successful</string>
+    <string name="qr_error_invalid_amount">Enter a valid amount</string>
+
+    <!-- Savings -->
+    <string name="savings_title">Savings pots</string>
+    <string name="savings_new_pot_button">New pot</string>
+    <string name="savings_pot_name_label">Pot name</string>
+    <string name="savings_target_amount_label">Target amount</string>
+    <string name="savings_create_pot_button">Create pot</string>
+    <string name="savings_error_invalid_pot">Enter a name and a valid target amount</string>
+
+    <!-- Bill payments -->
+    <string name="bills_title">Pay a bill</string>
+    <string name="bills_category_electricity">Electricity</string>
+    <string name="bills_category_water">Water</string>
+    <string name="bills_category_mobile">Mobile</string>
+    <string name="bills_account_number_label">Account / meter number</string>
+    <string name="bills_amount_label">Amount</string>
+    <string name="bills_pay_button">Pay bill</string>
+    <string name="bills_error_missing_fields">Fill in all fields with a valid amount</string>
+
+    <!-- Expense tracking -->
+    <string name="expenses_title">Spending breakdown</string>
+    <string name="expenses_period_week">Week</string>
+    <string name="expenses_period_month">Month</string>
+    <string name="expenses_period_year">Year</string>
+    <string name="expenses_category_food">Food</string>
+    <string name="expenses_category_bills">Bills</string>
+    <string name="expenses_category_transport">Transport</string>
+    <string name="expenses_category_shopping">Shopping</string>
+    <string name="expenses_category_transfer">Transfer</string>
+    <string name="expenses_category_topup">Top-up</string>
+    <string name="expenses_category_savings">Savings</string>
+    <string name="expenses_category_other">Other</string>
+
+
+</resources>

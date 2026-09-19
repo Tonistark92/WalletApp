@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- App -->
+    <string name="app_name">المحفظة</string>
+
+    <!-- Common -->
+    <string name="common_cancel">إلغاء</string>
+    <string name="common_retry">حاول مرة أخرى</string>
+    <string name="common_continue">متابعة</string>
+    <string name="common_done">تم</string>
+    <string name="common_error_generic">حدث خطأ ما</string>
+    <string name="common_loading">جارٍ التحميل…</string>
+
+    <!-- Onboarding (e-KYC) -->
+    <string name="onboarding_title">تحقق من هويتك</string>
+    <string name="onboarding_subtitle">مطلوب للامتثال للوائح مكافحة غسل الأموال المصرية</string>
+    <string name="onboarding_national_id_label">الرقم القومي</string>
+    <string name="onboarding_national_id_helper">الرقم القومي المكوّن من 14 رقمًا</string>
+    <string name="onboarding_national_id_error_format">أدخل رقمًا قوميًا صحيحًا مكوّنًا من 14 رقمًا</string>
+    <string name="onboarding_selfie_step_label">التقط صورة سيلفي</string>
+    <string name="onboarding_submit_button">إرسال</string>
+    <string name="onboarding_submitting_message">جارٍ التحقق من بياناتك…</string>
+    <string name="onboarding_pending_title">تم إرسال طلب التحقق</string>
+    <string name="onboarding_pending_body">سنُخطرك فور الموافقة على هويتك — عادةً ما يستغرق ذلك بضع دقائق</string>
+    <string name="onboarding_verified_title">تم التحقق من هويتك!</string>
+    <string name="onboarding_verified_continue_button">متابعة</string>
+    <string name="onboarding_rejected_title">تعذّر التحقق من هذا الرقم القومي</string>
+    <string name="onboarding_rejected_body">قد يكون السبب صورة غير واضحة أو عدم تطابق الصورة الشخصية</string>
+    <string name="onboarding_try_again_button">حاول مرة أخرى</string>
+
+    <!-- Sign In -->
+    <string name="login_phone_or_email_label">رقم الهاتف أو البريد الإلكتروني</string>
+    <string name="login_password_label">كلمة المرور</string>
+    <string name="login_forgot_password">نسيت كلمة المرور؟</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="login_biometric_button">الدخول ببصمة الإصبع</string>
+    <string name="login_no_account_prompt">ليس لديك حساب؟</string>
+    <string name="login_sign_up_link">إنشاء حساب</string>
+    <string name="login_error_invalid_credentials">رقم الهاتف أو البريد الإلكتروني أو كلمة المرور غير صحيحة</string>
+
+    <!-- Sign Up -->
+    <string name="signup_title">إنشاء حسابك</string>
+    <string name="signup_full_name_label">الاسم بالكامل</string>
+    <string name="signup_phone_label">رقم الهاتف</string>
+    <string name="signup_email_label">البريد الإلكتروني</string>
+    <string name="signup_password_label">كلمة المرور</string>
+    <string name="signup_password_strength_weak">ضعيفة</string>
+    <string name="signup_password_strength_medium">متوسطة</string>
+    <string name="signup_password_strength_strong">قوية</string>
+    <string name="signup_button">إنشاء حساب</string>
+    <string name="signup_error_invalid_email">أدخل بريدًا إلكترونيًا صحيحًا</string>
+    <string name="signup_error_invalid_phone">يجب أن يتكون رقم الهاتف من 11 رقمًا</string>
+    <string name="signup_error_account_exists">يوجد حساب بالفعل مرتبط بهذا الرقم</string>
+    <string name="signup_have_account_prompt">لديك حساب بالفعل؟</string>
+    <string name="signup_login_link">تسجيل الدخول</string>
+
+    <!-- OTP verification -->
+    <string name="otp_title">تحقق من رقم هاتفك</string>
+    <string name="otp_subtitle">أرسلنا رمزًا مكوّنًا من 6 أرقام إلى %1$s</string>
+    <string name="otp_resend_button">إعادة إرسال الرمز</string>
+    <string name="otp_resend_timer">إعادة الإرسال خلال %1$s</string>
+    <string name="otp_verify_button">تحقق</string>
+    <string name="otp_error_invalid_code">الرمز غير صحيح — حاول مرة أخرى</string>
+
+    <!-- Home -->
+    <string name="home_balance_label">الرصيد</string>
+    <string name="home_action_topup">شحن الرصيد</string>
+    <string name="home_action_send_money">إرسال أموال</string>
+    <string name="home_action_scan_to_pay">امسح للدفع</string>
+    <string name="home_action_savings">المدخرات</string>
+    <string name="home_action_pay_bills">دفع الفواتير</string>
+    <string name="home_action_spending">المصروفات</string>
+    <string name="home_recent_activity">النشاط الأخير</string>
+    <string name="home_error_load_failed">تعذّر تحميل محفظتك</string>
+
+    <!-- QR payment -->
+    <string name="qr_scan_instruction">وجّه الكاميرا نحو رمز QR الخاص بالتاجر</string>
+    <string name="qr_scan_simulate_button">محاكاة المسح (تجريبي)</string>
+    <string name="qr_pay_button">ادفع</string>
+    <string name="qr_amount_label">المبلغ</string>
+    <string name="qr_payment_success">تمت عملية الدفع بنجاح</string>
+    <string name="qr_error_invalid_amount">أدخل مبلغًا صحيحًا</string>
+
+    <!-- Savings -->
+    <string name="savings_title">أوعية الادخار</string>
+    <string name="savings_new_pot_button">وعاء جديد</string>
+    <string name="savings_pot_name_label">اسم الوعاء</string>
+    <string name="savings_target_amount_label">المبلغ المستهدف</string>
+    <string name="savings_create_pot_button">إنشاء الوعاء</string>
+    <string name="savings_error_invalid_pot">أدخل اسمًا ومبلغًا مستهدفًا صحيحًا</string>
+
+    <!-- Bill payments -->
+    <string name="bills_title">دفع فاتورة</string>
+    <string name="bills_category_electricity">الكهرباء</string>
+    <string name="bills_category_water">المياه</string>
+    <string name="bills_category_mobile">الهاتف المحمول</string>
+    <string name="bills_account_number_label">رقم الحساب / العداد</string>
+    <string name="bills_amount_label">المبلغ</string>
+    <string name="bills_pay_button">ادفع الفاتورة</string>
+    <string name="bills_error_missing_fields">املأ جميع الحقول بمبلغ صحيح</string>
+
+    <!-- Expense tracking -->
+    <string name="expenses_title">تحليل المصروفات</string>
+    <string name="expenses_period_week">أسبوع</string>
+    <string name="expenses_period_month">شهر</string>
+    <string name="expenses_period_year">سنة</string>
+    <string name="expenses_category_food">طعام</string>
+    <string name="expenses_category_bills">فواتير</string>
+    <string name="expenses_category_transport">مواصلات</string>
+    <string name="expenses_category_shopping">تسوق</string>
+    <string name="expenses_category_transfer">تحويل</string>
+    <string name="expenses_category_topup">شحن رصيد</string>
+    <string name="expenses_category_savings">مدخرات</string>
+    <string name="expenses_category_other">أخرى</string>
+
+</resources>

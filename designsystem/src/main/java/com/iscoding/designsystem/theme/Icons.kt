@@ -92,7 +92,7 @@ object WalletAppIcons {
         get() = ImageVector.vectorResource(R.drawable.nfc_small_wave_ic)
 
     // Actions
-    val NACActivity: ImageVector
+    val NAVActivity: ImageVector
         @Composable
         get() = ImageVector.vectorResource(R.drawable.nav_activity_ic)
 
